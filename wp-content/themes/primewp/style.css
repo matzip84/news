@@ -161,12 +161,12 @@ textarea{overflow:auto;padding-left:3px;vertical-align:top;width:100%;}
 #primewp-wrapper{position:relative;margin:0 auto;}
 .primewp-content-wrapper{position:relative;padding:0;word-wrap:break-word;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;}
 
-.primewp-main-wrapper{position:relative;width:54%;margin:0;padding:0;float:left;word-wrap:break-word;overflow:hidden;-webkit-box-flex:0;-webkit-flex:0 0 54%;-moz-box-flex:0;-ms-flex:0 0 54%;flex:0 0 54%;max-width:54%;-webkit-box-ordinal-group:2;-webkit-order:1;-moz-box-ordinal-group:2;-ms-flex-order:1;order:1;}
-.primewp-sidebar-one-wrapper{position:relative;width:22.8%;margin:0;padding:0;float:left;word-wrap:break-word;overflow:hidden;-webkit-box-flex:0;-webkit-flex:0 0 22.8%;-moz-box-flex:0;-ms-flex:0 0 22.8%;flex:0 0 22.8%;max-width:22.8%;-webkit-box-ordinal-group:1;-webkit-order:0;-moz-box-ordinal-group:1;-ms-flex-order:0;order:0;}
-.primewp-sidebar-two-wrapper{position:relative;width:22.8%;margin:0;padding:0;float:left;word-wrap:break-word;overflow:hidden;-webkit-box-flex:0;-webkit-flex:0 0 22.8%;-moz-box-flex:0;-ms-flex:0 0 22.8%;flex:0 0 22.8%;max-width:22.8%;-webkit-box-ordinal-group:3;-webkit-order:2;-moz-box-ordinal-group:3;-ms-flex-order:2;order:2;}
+.primewp-main-wrapper{position:relative;width:68%;margin:0;padding:0;float:left;word-wrap:break-word;overflow:hidden;-webkit-box-flex:0;-webkit-flex:0 0 54%;-moz-box-flex:0;-ms-flex:0 0 54%;flex:0 0 68%;max-width:60%;-webkit-box-ordinal-group:2;-webkit-order:1;-moz-box-ordinal-group:2;-ms-flex-order:1;order:1;}
+.primewp-sidebar-one-wrapper{position:relative;width:16.8%;margin:0;padding:0;float:left;word-wrap:break-word;overflow:hidden;-webkit-box-flex:0;-webkit-flex:0 0 22.8%;-moz-box-flex:0;-ms-flex:0 0 22.8%;flex:0 0 16.8%;max-width:16.8%;-webkit-box-ordinal-group:1;-webkit-order:0;-moz-box-ordinal-group:1;-ms-flex-order:0;order:0;}
+.primewp-sidebar-two-wrapper{position:relative;width:18.8%;margin:0;padding:0;float:left;word-wrap:break-word;overflow:hidden;-webkit-box-flex:0;-webkit-flex:0 0 22.8%;-moz-box-flex:0;-ms-flex:0 0 22.8%;flex:0 0 18.8%;max-width:18.8%;-webkit-box-ordinal-group:3;-webkit-order:2;-moz-box-ordinal-group:3;-ms-flex-order:2;order:2;}
 .primewp-main-wrapper-inside{padding:10px 0 10px 0;}
 .primewp-sidebar-one-wrapper-inside{padding:10px 10px 10px 0px;}
-.primewp-sidebar-two-wrapper-inside{padding:10px 0 10px 10px;}
+.primewp-sidebar-two-wrapper-inside{padding:10px 0 10px 7px;}
 
 .primewp-layout-full-width .primewp-main-wrapper{width:100%;float:none;-webkit-box-flex:0;-webkit-flex:0 0 100%;-moz-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;-webkit-box-ordinal-group:1;-webkit-order:0;-moz-box-ordinal-group:1;-ms-flex-order:0;order:0;}
 .primewp-layout-full-width .primewp-sidebar-one-wrapper{width:100%;float:none;-webkit-box-flex:0;-webkit-flex:0 0 100%;-moz-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;-webkit-box-ordinal-group:2;-webkit-order:1;-moz-box-ordinal-group:2;-ms-flex-order:1;order:1;}
@@ -918,3 +918,36 @@ input.primewp-search-submit{border-radius:0;position:absolute;top:0;right:0;heig
 @-o-keyframes primewp-fadein{from{opacity:0;}to{opacity:1;}}
 @keyframes primewp-fadein{from{opacity:0;}to{opacity:1;}}
 .primewp-fadein{-webkit-animation-name:primewp-fadein;-moz-animation-name:primewp-fadein;-o-animation-name:primewp-fadein;animation-name:primewp-fadein;}
+
+
+.primewp-sidebar-widget-areas .newspaper_list_widget ul li {
+    display: table;
+    padding: 0px;
+    line-height: 0px;
+}
+
+.newspaper_list_widget {
+    width: 87px;
+    float: left;
+}
+.news_widget_bg_left {
+  width: 10px;
+  float: left;
+}
+#primewp-sidebar-two-wrapper .widget_text.primewp-box-inside {
+    background: #75615c;
+}
+
+
+
+#search_portal .input3 {
+    width: 100%;
+}
+
+#search_portal {
+    margin: 0px;
+}
+
+#search_portal td p {
+    margin: 0px;
+}

@@ -1,0 +1,40 @@
+
+
+.newspaper_list_2 {
+    margin-left: 0px;
+}
+
+.newspaper_list_1:nth-child(1) {
+    margin-left: 40px;
+}
+.newspaper_list_1:nth-child(2) {
+    margin-left: 30px;
+}
+.newspaper_list_1:nth-child(3) {
+    margin-left: 20px;
+}
+.newspaper_list_1:nth-child(4) {
+    margin-left: 10px;
+}
+	.newspaper_list_1 > div {
+	    float: left;
+	}
+	
+	li {
+	    list-style: none;
+	        height: 40px;
+	}
+	
+	div {
+	    display: inline-flex;
+	}
+	
+	.newspaper_list_1 {
+	    width: 492px;
+	    float: left;
+	}
+	
+	#papaer_lists {
+	    width: 480px;
+	    display: inline-block;
+	}

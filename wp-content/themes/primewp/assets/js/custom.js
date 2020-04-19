@@ -139,5 +139,51 @@ jQuery(document).ready(function($) {
         $(".primewp-header-bottom-content").not(primewpactiveheadertab).hide();
         $(primewpactiveheadertab).slideToggle(400);
     });
+    
+    $("#magagine_left_menu li a").on('click',function(e){
+    	 e.preventDefault();
+    	 var link = $(this).attr("href");
+    	 
+    	 if(link){
+    		 $("#paper_frame").attr("src",link);
+    	 }
+    });
 
 });
+
+
+
+
+
+search = new Array;
+function changesearch(re2)
+{
+	document.location = "?kind="+re2;	
+}
+function mysubmit(re2){
+
+	frmtmp = 'frm' + re2;
+	frmtmp = eval(frmtmp);
+	if(myForm.word.value){ 
+		frmtmp.elements[0].value = myForm.word.value;
+		frmtmp.submit();
+	}else{  
+		window.open(search[re2][0], 'nWin');
+	}
+
+}
+
+function enterfunc(val){
+	if(val==13){   
+			mysubmit(8);
+	}
+}
+search[0] = ["http://www.naver.com", "http://search.naver.com/search.naver?where=nexearch&query"];
+search[1] = ["http://www.daum.net", "http://search.daum.net/cgi-bin/nsp/search.cgi?action=query&pg=express&which=web&qt=&q"];
+search[2] = ["http://kr.yahoo.com", "http://kr.search.yahoo.com/bin/search?&p"];
+search[3] = ["http://www.nate.com", "http://search.empas.com/search/all.html?m=X&s=s&e=1&n=10&q"];
+search[4] = ["http://www.paran.com", "http://search.paran.com/search/index.php?fn=top&Query"];
+search[5] = ["http://www.freechal.com", "http://search.freechal.com/search_total.asp?where=all&keyword"];
+search[6] = ["http://www.google.co.kr", "http://www.google.co.kr/search?hl=ko&ie=euc-kr&oe=euc-kr&lr=lang_ko&q"];
+search[7] = ["http://www.dreamwiz.com", "http://search.dreamwiz.com/cgi-bin/irs.cgi?so=2&x=21&y=12&q"];
+search[8] = ["http://www.naver.com", "http://www.disco.co.kr/SEARCH?MD=21&media_section=ALL&keyword"];
